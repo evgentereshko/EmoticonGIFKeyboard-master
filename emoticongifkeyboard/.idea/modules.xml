@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2043383872/EmoticonGIFKeyboard-master.iml" filepath="$PROJECT_DIR$/.idea/modules/-2043383872/EmoticonGIFKeyboard-master.iml" group="EmoticonGIFKeyboard-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1930258258/app.iml" filepath="$PROJECT_DIR$/.idea/modules/1930258258/app.iml" group="EmoticonGIFKeyboard-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/emoticongifkeyboard.iml" filepath="$PROJECT_DIR$/.idea/modules/emoticongifkeyboard.iml" group="EmoticonGIFKeyboard-master/emoticongifkeyboard" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1434780485/emoticonpack-samsung.iml" filepath="$PROJECT_DIR$/.idea/modules/-1434780485/emoticonpack-samsung.iml" group="EmoticonGIFKeyboard-master/emoticonpack-samsung" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1253626016/gifpack-giphy.iml" filepath="$PROJECT_DIR$/.idea/modules/-1253626016/gifpack-giphy.iml" group="EmoticonGIFKeyboard-master/gifpack-giphy" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1241741119/gifpack-tenor.iml" filepath="$PROJECT_DIR$/.idea/modules/-1241741119/gifpack-tenor.iml" group="EmoticonGIFKeyboard-master/gifpack-tenor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1211179520/mylibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/1211179520/mylibrary.iml" group="EmoticonGIFKeyboard-master/mylibrary" />
+    </modules>
+  </component>
+</project>
