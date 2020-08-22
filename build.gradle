@@ -48,17 +48,17 @@ ext {
     //For bintray and jcenter distribution
     bintrayRepo = 'EmoticonGIFKeyboard'
 
-    publishedGroupId = 'com.kevalpatel2106'
+    publishedGroupId = 'com.github.evgentereshko'
     libraryDescription = 'An advance Emoticons & GIF keyboard.'
 
-    siteUrl = 'https://github.com/kevalpatel2106/EmoticonGIFKeyboard'
-    gitUrl = 'https://github.com/kevalpatel2106/EmoticonGIFKeyboard.git'
+    siteUrl = 'https://github.com/evgentereshko/EmoticonGIFKeyboard'
+    gitUrl = 'https://github.com/evgentereshko/EmoticonGIFKeyboard.git'
 
     libraryVersion = '1.1'
 
-    developerId = 'kevalpatel2106'
-    developerName = 'Keval Patel'
-    developerEmail = 'kevalpatel2106@gmail.com'
+    developerId = 'evgentereshko'
+    developerName = 'Evgen Tereshko'
+    developerEmail = 'yaheni.tsiareshka@gmail.com'
     licenseName = 'The Apache Software License, Version 2.0'  //Example for license
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
