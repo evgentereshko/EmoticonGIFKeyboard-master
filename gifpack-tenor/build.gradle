@@ -46,8 +46,8 @@ android {
 
 dependencies {
     implementation project(':emoticongifkeyboard')
-    implementation(retrofitLib.retrofit)
-    implementation supportLib.annotations
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
 }
 
 apply from: '../gradle/install-bintray.gradle'
