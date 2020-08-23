@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
        EmoticonGIFKeyboardFragment.StickerConfig stickerConfig = new EmoticonGIFKeyboardFragment
                .StickerConfig("https://talks.yanside.xyz/stickers/Adsy/")
                .setStickerSelectListener(new StickerconSelectListener() {
-                   @Override                    public void onStickerSelected(@NonNull Drawable image) {
+                   @Override                    public void onStickerSelected(@NonNull String image) {
                        //Do something with the selected GIF.
                         Glide.with(MainActivity.this)
                                 .load(image)

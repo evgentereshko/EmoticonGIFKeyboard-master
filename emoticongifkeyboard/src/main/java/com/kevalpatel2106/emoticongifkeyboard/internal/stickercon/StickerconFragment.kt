@@ -166,7 +166,7 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
         return items
     }
 
-    override fun OnListItemSelected(image: Drawable) {
+    override fun OnListItemSelected(image: String) {
         mStickerSelectListener?.onStickerSelected(image)
     }
 }

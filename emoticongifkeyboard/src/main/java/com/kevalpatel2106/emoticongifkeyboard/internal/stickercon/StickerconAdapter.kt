@@ -34,7 +34,7 @@ class StickerconAdapter (
 ): RecyclerView.Adapter<StickerconAdapter.ItemHolder>() {
 
     interface ItemSelectListener {
-        fun OnListItemSelected(image: Drawable)
+        fun OnListItemSelected(image: String)
     }
 
    private lateinit var listener : ItemSelectListener
@@ -49,7 +49,7 @@ class StickerconAdapter (
         val itemHolder = LayoutInflater
             .from(parent.context)
             .inflate(R.layout.item_sticker,parent,false)
-        return ItemHolder(itemHolder,listener)
+        return ItemHolder(itemHolder,listener,arrayList)
     }
 
     override fun getItemCount() = arrayList.size
@@ -65,12 +65,12 @@ class StickerconAdapter (
 
     }
 
-    class ItemHolder(itemview: View,listener: ItemSelectListener) : RecyclerView.ViewHolder(itemview){
+    class ItemHolder(itemview: View,listener: ItemSelectListener,arrayList: ArrayList<String>) : RecyclerView.ViewHolder(itemview){
         var mImage = itemview.findViewById<ImageView>(R.id.imageView)
 
         init {
             itemview.setOnClickListener {
-                listener.OnListItemSelected(mImage.drawable)
+                listener.OnListItemSelected(arrayList.get(adapterPosition))
             }
         }
     }
