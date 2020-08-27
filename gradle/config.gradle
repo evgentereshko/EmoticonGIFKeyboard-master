@@ -16,7 +16,7 @@
 
 ext {
     buidlConfig = [
-            min             : 16,
+            min             : 21,
             target          : 28,
             compile         : 28,
     ]

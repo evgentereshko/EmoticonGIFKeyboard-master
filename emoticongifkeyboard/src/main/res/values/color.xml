@@ -17,10 +17,10 @@
 
 <resources>
     <!--Background colors-->
-    <color name="background_dark">#E3E7E8</color>
-    <color name="background_light">#EBEFF2</color>
+    <color name="background_dark">#FFFFFF</color>#B3E5FC
+    <color name="background_light">#B3E5FC</color>
 
     <!--Icon colors-->
-    <color name="icon">#6B777D</color>
-    <color name="icon_selected">#128C7E</color>
+    <color name="icon">#FFFFFF</color>
+    <color name="icon_selected">#FFFFFF</color>
 </resources>

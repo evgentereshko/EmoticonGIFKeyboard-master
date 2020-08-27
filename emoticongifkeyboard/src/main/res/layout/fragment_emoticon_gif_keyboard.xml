@@ -84,7 +84,7 @@
                 android:layout_height="@dimen/keyboard_tabs_container_height"
                 android:background="?selectableItemBackground"
                 android:padding="@dimen/image_btn_padding"
-                android:src="@drawable/ic_smiley"
+                android:src="@drawable/smile3"
                 tools:ignore="ContentDescription" />
 
 

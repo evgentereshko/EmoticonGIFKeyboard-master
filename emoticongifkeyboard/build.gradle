@@ -30,7 +30,7 @@ android {
 
     defaultConfig {
         //sdks
-        minSdkVersion buidlConfig.min
+        minSdkVersion 21
         targetSdkVersion buidlConfig.target
 
         versionCode 1

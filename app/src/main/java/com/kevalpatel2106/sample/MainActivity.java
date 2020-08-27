@@ -22,9 +22,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatImageView;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.FrameLayout;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressWarnings("unused")
     private static final String TAG = "MainActivity";
     private EmoticonGIFKeyboardFragment mEmoticonGIFKeyboardFragment;
+    private int itFirst = 0;
 
     /**
      * Manually toggle soft keyboard visibility
@@ -161,19 +164,23 @@ public class MainActivity extends AppCompatActivity {
          */
         mEmoticonGIFKeyboardFragment = EmoticonGIFKeyboardFragment
                 .getNewInstance(findViewById(R.id.keyboard_container), emoticonConfig,gifConfig,stickerConfig);
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.keyboard_container, mEmoticonGIFKeyboardFragment)
-                .commit();
-        mEmoticonGIFKeyboardFragment.open(); //Open the fragment by default while initializing.
-
 
         //Set smiley button to open/close the emoticon gif keyboard
         findViewById(R.id.emoji_open_close_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (itFirst==0 ){
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.keyboard_container, mEmoticonGIFKeyboardFragment)
+                            .commit();
+                    mEmoticonGIFKeyboardFragment.open(); //Open the fragment by default while initializing.
+                    itFirst++;
+                }
+                else {
                 mEmoticonGIFKeyboardFragment.toggle();
                 toggleKeyboardVisibility(MainActivity.this);
+                }
             }
         });
 

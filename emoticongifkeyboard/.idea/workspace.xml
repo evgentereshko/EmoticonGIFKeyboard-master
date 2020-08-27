@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e8e83f1-c8b4-465d-a5f1-177cdef803ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/kevalpatel2106/sample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/kevalpatel2106/sample/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kevalpatel2106/emoticongifkeyboard/internal/stickercon/StickerconAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kevalpatel2106/emoticongifkeyboard/internal/stickercon/StickerconAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kevalpatel2106/emoticongifkeyboard/internal/stickercon/StickerconFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kevalpatel2106/emoticongifkeyboard/internal/stickercon/StickerconFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kevalpatel2106/emoticongifkeyboard/stickercon/StickerconSelectListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kevalpatel2106/emoticongifkeyboard/stickercon/StickerconSelectListener.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
