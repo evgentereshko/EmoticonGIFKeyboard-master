@@ -48,7 +48,7 @@ ext {
 
     //Other libs
     otherLib = [
-            glide            : 'com.github.bumptech.glide:glide:4.8.0',
+            glide            : 'com.github.bumptech.glide:glide:4.9.0',
             sqliteassethelper: 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1',
     ]
 }
