@@ -79,10 +79,8 @@
             <!--Emoticon button-->
             <com.kevalpatel2106.emoticongifkeyboard.internal.EmoticonGifImageView
                 android:id="@+id/btn_emoji_tab"
-                style="@style/Base.Widget.AppCompat.Button.Borderless"
                 android:layout_width="49dp"
                 android:layout_height="@dimen/keyboard_tabs_container_height"
-                android:background="?selectableItemBackground"
                 android:padding="@dimen/image_btn_padding"
                 android:src="@drawable/smile3"
                 tools:ignore="ContentDescription" />
@@ -91,10 +89,8 @@
             <!--GIF button-->
             <com.kevalpatel2106.emoticongifkeyboard.internal.EmoticonGifImageView
                 android:id="@+id/btn_gif_tab"
-                style="@style/Base.Widget.AppCompat.Button.Borderless"
                 android:layout_width="@dimen/keyboard_tabs_container_height"
                 android:layout_height="@dimen/keyboard_tabs_container_height"
-                android:background="?selectableItemBackground"
                 android:src="@drawable/ic_gif"
                 tools:ignore="ContentDescription,RtlHardcoded"/>
 
@@ -103,7 +99,7 @@
         
                 android:layout_width="38dp"
                 android:layout_height="@dimen/keyboard_tabs_container_height"
-                android:background="?selectableItemBackground"
+
                 android:src="@drawable/ic_sticker"
                 tools:ignore="ContentDescription,RtlHardcoded" />
         </LinearLayout>
