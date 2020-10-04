@@ -24,6 +24,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.kevalpatel2106.emoticongifkeyboard.R
 import com.kevalpatel2106.emoticongifkeyboard.gifs.GifProviderProtocol
 import java.util.*
@@ -43,7 +45,6 @@ class StickerconAdapter (
         listener = context
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder {
 
         val itemHolder = LayoutInflater
@@ -58,12 +59,13 @@ class StickerconAdapter (
 
         val sticker : String = arrayList.get(position)
 
-        Glide.with(context)
-//                .asBitmap()
-                .load(sticker)
-                .into(holder.mImage);
+          Glide.with(context)
+//               .asBitmap()
+                 .load(sticker)
+                 .thumbnail(0.35f)
+                 .transition(DrawableTransitionOptions.withCrossFade())
+                 .into(holder.mImage); }
 
-    }
 
     class ItemHolder(itemview: View,listener: ItemSelectListener,arrayList: ArrayList<String>) : RecyclerView.ViewHolder(itemview){
         var mImage = itemview.findViewById<ImageView>(R.id.imageView)

@@ -59,7 +59,6 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
         mRecyclerView?.layoutManager = mGridLayoutManager
         mRecyclerView?.setHasFixedSize(true)
 
-        arrayList = ArrayList()
         arrayList = setDataInList()
         mEmojiAdapter = StickerconAdapter(requireContext(), arrayList!!)
         mEmojiAdapter!!.setListener(this)
@@ -76,7 +75,7 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
     }
 
     fun setDataInList() : ArrayList<String>{
-        var items: ArrayList<String> = ArrayList()
+        val items: ArrayList<String> = ArrayList()
 
         items.add(mStickerProvider+"1.png")
         items.add(mStickerProvider+"2.png")
