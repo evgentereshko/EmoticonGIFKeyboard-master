@@ -94,6 +94,7 @@
             android:layout_toLeftOf="@id/search_btn"
             android:layout_toRightOf="@id/up_arrow"
             android:layout_toStartOf="@id/search_btn"
+            android:textColor="@android:color/black"
             android:background="@android:color/transparent"
             android:hint="@string/hint_search"
             android:imeOptions="actionSearch"

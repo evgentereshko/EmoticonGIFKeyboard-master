@@ -78,6 +78,7 @@
             android:layout_toEndOf="@id/up_arrow"
             android:layout_toRightOf="@id/up_arrow"
             android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
             android:hint="@string/hint_search"
             android:imeOptions="actionSearch"
             android:maxLines="1"
