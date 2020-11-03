@@ -510,7 +510,7 @@ public final class EmoticonGIFKeyboardFragment extends Fragment implements Fragm
      * @return True if {@link EmoticonGIFKeyboardFragment} is visible.
      */
     public boolean isOpen() {
-        return mRootView.getVisibility() == View.VISIBLE;
+        return mRootView!= null && mRootView.getVisibility() == View.VISIBLE;
     }
 
     @Retention(RetentionPolicy.SOURCE)

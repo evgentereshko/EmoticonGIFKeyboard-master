@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
-      <module name="EmoticonGIFKeyboard-master.app" target="1.8" />
-      <module name="EmoticonGIFKeyboard-master.emoticongifkeyboard" target="1.8" />
-      <module name="EmoticonGIFKeyboard-master.emoticonpack-samsung" target="1.8" />
-      <module name="EmoticonGIFKeyboard-master.gifpack-giphy" target="1.8" />
-      <module name="EmoticonGIFKeyboard-master.gifpack-tenor" target="1.8" />
-      <module name="EmoticonGIFKeyboard-master.mylibrary" target="1.8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8" />
   </component>
 </project>
