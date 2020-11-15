@@ -2,13 +2,40 @@
 <android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
     android:background="@color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:id="@+id/im_adsy"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:src="@drawable/adsy">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/im_masha"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/masha">
+
+        </ImageView>
+
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="match_parent"
         android:background="@color/background_light" />
 
 </android.support.v7.widget.LinearLayoutCompat>

@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
 
        EmoticonGIFKeyboardFragment.StickerConfig stickerConfig = new EmoticonGIFKeyboardFragment
-               .StickerConfig("https://talks.yanside.xyz/stickers/Adsy/")
+               .StickerConfig("https://teresha.xyz/stickers/Adsy/")
                .setStickerSelectListener(new StickerconSelectListener() {
                    @Override                    public void onStickerSelected(@NonNull String image) {
                        //Do something with the selected GIF.

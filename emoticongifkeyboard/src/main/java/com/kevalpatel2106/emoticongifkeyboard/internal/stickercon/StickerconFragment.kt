@@ -25,6 +25,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import com.kevalpatel2106.emoticongifkeyboard.R
 import com.kevalpatel2106.emoticongifkeyboard.gifs.GifProviderProtocol
 import com.kevalpatel2106.emoticongifkeyboard.stickercon.StickerconSelectListener
@@ -37,6 +38,8 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
     var arrayList : ArrayList<String>? = null
     var mEmojiAdapter : StickerconAdapter? = null
     var mStickerProvider:String = ""
+    var im_Adsy: ImageView? = null
+    var im_Masha: ImageView? = null
 
     private  var mStickerSelectListener: StickerconSelectListener? = null
 
@@ -48,6 +51,8 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
         super.onViewCreated(view, savedInstanceState)
 
         mRecyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
+        im_Adsy = view.findViewById<ImageView>(R.id.im_adsy)
+        im_Masha = view.findViewById<ImageView>(R.id.im_masha)
 
         mGridLayoutManager = GridLayoutManager(
                 requireContext(),
@@ -63,6 +68,20 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
         mEmojiAdapter = StickerconAdapter(requireContext(), arrayList!!)
         mEmojiAdapter!!.setListener(this)
         mRecyclerView?.adapter = mEmojiAdapter
+
+        im_Adsy!!.setOnClickListener {
+            arrayList = setDataInList()
+            mEmojiAdapter = StickerconAdapter(requireContext(), arrayList!!)
+            mEmojiAdapter!!.setListener(this)
+            mRecyclerView?.adapter = mEmojiAdapter
+        }
+
+        im_Masha!!.setOnClickListener {
+            arrayList = setDataInListMasha()
+            mEmojiAdapter = StickerconAdapter(requireContext(), arrayList!!)
+            mEmojiAdapter!!.setListener(this)
+            mRecyclerView?.adapter = mEmojiAdapter
+        }
 
     }
 
@@ -161,6 +180,39 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
         items.add(mStickerProvider+"86.png")
         items.add(mStickerProvider+"87.png")
         items.add(mStickerProvider+"88.png")
+
+        return items
+    }
+
+    fun setDataInListMasha() : ArrayList<String>{
+        val items: ArrayList<String> = ArrayList()
+
+        items.add(mStickerProvider+"m1.png")
+        items.add(mStickerProvider+"m2.png")
+        items.add(mStickerProvider+"m3.png")
+        items.add(mStickerProvider+"m4.png")
+        items.add(mStickerProvider+"m5.png")
+        items.add(mStickerProvider+"m6.png")
+        items.add(mStickerProvider+"m7.png")
+        items.add(mStickerProvider+"m8.png")
+        items.add(mStickerProvider+"m9.png")
+        items.add(mStickerProvider+"m10.png")
+        items.add(mStickerProvider+"m11.png")
+        items.add(mStickerProvider+"m12.png")
+        items.add(mStickerProvider+"m13.png")
+        items.add(mStickerProvider+"m14.png")
+        items.add(mStickerProvider+"m15.png")
+        items.add(mStickerProvider+"m17.png")
+        items.add(mStickerProvider+"m18.png")
+        items.add(mStickerProvider+"m19.png")
+        items.add(mStickerProvider+"m20.png")
+        items.add(mStickerProvider+"m21.png")
+        items.add(mStickerProvider+"m22.png")
+        items.add(mStickerProvider+"m23.png")
+        items.add(mStickerProvider+"m24.png")
+        items.add(mStickerProvider+"m25.png")
+        items.add(mStickerProvider+"m26.png")
+        items.add(mStickerProvider+"m27.png")
 
         return items
     }
