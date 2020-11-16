@@ -30,6 +30,19 @@
         android:layout_gravity="center"/>
 
     <!--1. GIF grid-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="top"
+        android:src="@drawable/pp">
+    </ImageView>
+
     <GridView
         android:id="@+id/gif_gridView"
         android:layout_width="match_parent"
@@ -38,6 +51,7 @@
         android:cacheColorHint="@android:color/transparent"
         android:numColumns="2"
         android:scrollbars="none"/>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/error_textview"

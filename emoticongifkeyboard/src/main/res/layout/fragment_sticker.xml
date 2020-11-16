@@ -13,20 +13,29 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="45dp"
+            android:layout_width="40dp"
             android:id="@+id/im_adsy"
-            android:layout_height="45dp"
-            android:padding="5dp"
+            android:layout_height="40dp"
+
             android:src="@drawable/adsy">
 
         </ImageView>
 
         <ImageView
-            android:layout_width="30dp"
+            android:layout_width="40dp"
             android:id="@+id/im_masha"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:src="@drawable/masha">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/im_bears"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/bears">
 
         </ImageView>
 

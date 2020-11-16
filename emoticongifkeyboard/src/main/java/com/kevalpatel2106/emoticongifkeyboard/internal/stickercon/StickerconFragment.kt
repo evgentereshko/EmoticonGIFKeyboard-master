@@ -40,6 +40,7 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
     var mStickerProvider:String = ""
     var im_Adsy: ImageView? = null
     var im_Masha: ImageView? = null
+    var im_Bears: ImageView? = null
 
     private  var mStickerSelectListener: StickerconSelectListener? = null
 
@@ -53,6 +54,7 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
         mRecyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
         im_Adsy = view.findViewById<ImageView>(R.id.im_adsy)
         im_Masha = view.findViewById<ImageView>(R.id.im_masha)
+        im_Bears = view.findViewById<ImageView>(R.id.im_bears)
 
         mGridLayoutManager = GridLayoutManager(
                 requireContext(),
@@ -78,6 +80,13 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
 
         im_Masha!!.setOnClickListener {
             arrayList = setDataInListMasha()
+            mEmojiAdapter = StickerconAdapter(requireContext(), arrayList!!)
+            mEmojiAdapter!!.setListener(this)
+            mRecyclerView?.adapter = mEmojiAdapter
+        }
+
+        im_Bears!!.setOnClickListener {
+            arrayList = setDataInListBears()
             mEmojiAdapter = StickerconAdapter(requireContext(), arrayList!!)
             mEmojiAdapter!!.setListener(this)
             mRecyclerView?.adapter = mEmojiAdapter
@@ -180,6 +189,7 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
         items.add(mStickerProvider+"86.png")
         items.add(mStickerProvider+"87.png")
         items.add(mStickerProvider+"88.png")
+        items.add(mStickerProvider+"90.png")
 
         return items
     }
@@ -212,7 +222,39 @@ class StickerconFragment(): Fragment(),StickerconAdapter.ItemSelectListener {
         items.add(mStickerProvider+"m24.png")
         items.add(mStickerProvider+"m25.png")
         items.add(mStickerProvider+"m26.png")
-        items.add(mStickerProvider+"m27.png")
+
+        return items
+    }
+
+    fun setDataInListBears() : ArrayList<String>{
+        val items: ArrayList<String> = ArrayList()
+
+        items.add(mStickerProvider+"b1.png")
+        items.add(mStickerProvider+"b2.png")
+        items.add(mStickerProvider+"b3.png")
+        items.add(mStickerProvider+"b4.png")
+        items.add(mStickerProvider+"b5.png")
+        items.add(mStickerProvider+"b6.png")
+        items.add(mStickerProvider+"b7.png")
+        items.add(mStickerProvider+"b8.png")
+        items.add(mStickerProvider+"b9.png")
+        items.add(mStickerProvider+"b10.png")
+        items.add(mStickerProvider+"b11.png")
+        items.add(mStickerProvider+"b12.png")
+        items.add(mStickerProvider+"b13.png")
+        items.add(mStickerProvider+"b14.png")
+        items.add(mStickerProvider+"b15.png")
+        items.add(mStickerProvider+"b16.png")
+        items.add(mStickerProvider+"b17.png")
+        items.add(mStickerProvider+"b18.png")
+        items.add(mStickerProvider+"b19.png")
+        items.add(mStickerProvider+"b20.png")
+        items.add(mStickerProvider+"b21.png")
+        items.add(mStickerProvider+"b22.png")
+        items.add(mStickerProvider+"b23.png")
+        items.add(mStickerProvider+"b24.png")
+        items.add(mStickerProvider+"b25.png")
+        items.add(mStickerProvider+"b26.png")
 
         return items
     }
